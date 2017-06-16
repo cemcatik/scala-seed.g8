@@ -27,3 +27,5 @@ wartremoverErrors in (Compile, compile) ++= Warts.allBut(
 )
 wartremoverErrors in (Test, compileIncremental) := (wartremoverErrors in (Compile, compile)).value diff Seq(
 )
+
+scalacOptions in Test ++= Seq("-Yrangepos")
