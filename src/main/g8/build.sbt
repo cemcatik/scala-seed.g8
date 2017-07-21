@@ -10,7 +10,7 @@ scalacOptions ++= Seq(
   "-feature"
 )
 
-def akka(c: String)   = "com.typesafe.akka" %% s"akka-\$c"   % "2.5.2"
+def akka(c: String)   = "com.typesafe.akka" %% s"akka-\$c"   % "2.5.3"
 def specs2(c: String) = "org.specs2"        %% s"specs2-\$c" % "3.9.1"
 
 libraryDependencies ++= Seq(
