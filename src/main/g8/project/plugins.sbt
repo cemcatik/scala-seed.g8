@@ -1,7 +1,7 @@
 addSbtPlugin("com.typesafe.sbt" % "sbt-git"              % "0.9.3")
-addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
-addSbtPlugin("com.geirsson"     %% "sbt-scalafmt"        % "0.6.8")
-addSbtPlugin("org.wartremover"  % "sbt-wartremover"      % "2.1.1")
+addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.9.0")
+addSbtPlugin("com.lucidchart"   % "sbt-scalafmt"         % "1.15")
+addSbtPlugin("org.wartremover"  % "sbt-wartremover"      % "2.2.1")
 
 libraryDependencies ++= Seq(
   // To get rid of SLF4J warnings when sbt starts up

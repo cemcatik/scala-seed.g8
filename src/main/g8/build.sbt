@@ -2,16 +2,17 @@ organization := "$organization$"
 name := "$name$"
 
 enablePlugins(GitVersioning)
+enablePlugins(GitBranchPrompt)
 git.baseVersion := "1.0"
 git.useGitDescribe := true
 
-scalaVersion := "2.12.2"
+scalaVersion := "2.12.4"
 scalacOptions ++= Seq(
   "-feature"
 )
 
-def akka(c: String)   = "com.typesafe.akka" %% s"akka-\$c"   % "2.5.3"
-def specs2(c: String) = "org.specs2"        %% s"specs2-\$c" % "3.9.1"
+def akka(c: String)   = "com.typesafe.akka" %% s"akka-\$c"   % "2.5.9"
+def specs2(c: String) = "org.specs2"        %% s"specs2-\$c" % "4.0.2"
 
 libraryDependencies ++= Seq(
   akka("actor"),
