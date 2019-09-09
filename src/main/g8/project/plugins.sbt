@@ -1,7 +1,6 @@
-addSbtPlugin("com.typesafe.sbt" % "sbt-git"              % "0.9.3")
-addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.9.0")
-addSbtPlugin("com.lucidchart"   % "sbt-scalafmt"         % "1.15")
-addSbtPlugin("org.wartremover"  % "sbt-wartremover"      % "2.2.1")
+addSbtPlugin("com.typesafe.sbt" % "sbt-git"              % "1.0.0")
+addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.9.2")
+addSbtPlugin("org.scalameta"    % "sbt-scalafmt"         % "2.0.4")
 
 libraryDependencies ++= Seq(
   // To get rid of SLF4J warnings when sbt starts up
